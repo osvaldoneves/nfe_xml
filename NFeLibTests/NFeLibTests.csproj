@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B48CC330-CB3F-48C6-B2B1-4DDCA9D73D7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFeLibTests</RootNamespace>
+    <AssemblyName>NFeLibTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XML\AdicaoXML_Teste.cs" />
+    <Compile Include="XML\ArmamentoXML_Teste.cs" />
+    <Compile Include="XML\AutorizacaoXML_Teste.cs" />
+    <Compile Include="XML\CanaXML_Teste.cs" />
+    <Compile Include="XML\CartaoXML_Teste.cs" />
+    <Compile Include="XML\CideXML_Teste.cs" />
+    <Compile Include="XML\CobrancaXML_Teste.cs" />
+    <Compile Include="XML\COFINSSTXML_Teste.cs" />
+    <Compile Include="XML\COFINS\COFINSAliqXML_Teste.cs" />
+    <Compile Include="XML\COFINS\COFINSNaoTributadoXML_Teste.cs" />
+    <Compile Include="XML\COFINS\COFINSOutrXML_Teste.cs" />
+    <Compile Include="XML\COFINS\COFINSQtdeXML_Teste.cs" />
+    <Compile Include="XML\CombustivelXML_Teste.cs" />
+    <Compile Include="XML\ComercioExteriorXML_Teste.cs" />
+    <Compile Include="XML\CompraXML_Teste.cs" />
+    <Compile Include="XML\DeclaracaoInformacaoXML_Teste.cs" />
+    <Compile Include="XML\DeducaoXML_Teste.cs" />
+    <Compile Include="XML\DestinatarioXML_Teste.cs" />
+    <Compile Include="XML\DetalhamentoXML_Teste.cs" />
+    <Compile Include="XML\DocReferenciadoXML_Teste.cs" />
+    <Compile Include="XML\DuplicataXML_Teste.cs" />
+    <Compile Include="XML\EmitenteXML_Teste.cs" />
+    <Compile Include="XML\EnderecoEmitenteXML_Teste.cs" />
+    <Compile Include="XML\EntregaXML_Teste.cs" />
+    <Compile Include="XML\ExportacaoIndiretaXML_Teste.cs" />
+    <Compile Include="XML\ExportacaoXML_Teste.cs" />
+    <Compile Include="XML\FaturaXML_Teste.cs" />
+    <Compile Include="XML\FormaPagamentoXML_Teste.cs" />
+    <Compile Include="XML\FornecimentoDiarioCanaXML_Teste.cs" />
+    <Compile Include="XML\ICMSParteXML_Teste.cs" />
+    <Compile Include="XML\ICMSSTXML_Teste.cs" />
+    <Compile Include="XML\ICMSTotalXML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS00XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS10XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS20XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS30XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS40XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS51XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS60XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS70XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMS90XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMSSN101XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMSSN102XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMSSN201XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMSSN202XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMSSN500XML_Teste.cs" />
+    <Compile Include="XML\ICMS\ICMSSN900XML_Teste.cs" />
+    <Compile Include="XML\IdentificacaoXml_Teste.cs" />
+    <Compile Include="XML\ImpostoDevolvidoXML_Teste.cs" />
+    <Compile Include="XML\ImpostoImportacaoXML_Teste.cs" />
+    <Compile Include="XML\ImpostoXML_Teste.cs" />
+    <Compile Include="XML\InfoAdicionalXML_Teste.cs" />
+    <Compile Include="XML\InformacaoXML_Teste.cs" />
+    <Compile Include="XML\IPIDevolvidoXML_Teste.cs" />
+    <Compile Include="XML\IPINaoTributadoXML_Teste.cs" />
+    <Compile Include="XML\IPITributadoXML_Teste.cs" />
+    <Compile Include="XML\IPIXML_Teste.cs" />
+    <Compile Include="XML\ISSQNTotalXML_Teste.cs" />
+    <Compile Include="XML\ISSQNXML_Teste.cs" />
+    <Compile Include="XML\LacreXML_Teste.cs" />
+    <Compile Include="XML\MedicamentoXML_Teste.cs" />
+    <Compile Include="XML\ObsContribuinteXML_Teste.cs" />
+    <Compile Include="XML\ObsFiscoXML_Teste.cs" />
+    <Compile Include="XML\PISSTXML_Teste.cs" />
+    <Compile Include="XML\ProcessoReferenciadoXML_Teste.cs" />
+    <Compile Include="XML\ProdutoXML_Teste.cs" />
+    <Compile Include="XML\ReboqueXML_Teste.cs" />
+    <Compile Include="XML\TotalXML_Teste.cs" />
+    <Compile Include="XML\TransportadoraXML_Teste.cs" />
+    <Compile Include="XML\VeiculoTransporteXML_Teste.cs" />
+    <Compile Include="XML\VeiculoXML_Teste.cs" />
+    <Compile Include="XML\VolumeXML_Teste.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NFeLib\NFeLib.csproj">
+      <Project>{A280E814-90A6-4FC7-B0C6-511055874A25}</Project>
+      <Name>NFeLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

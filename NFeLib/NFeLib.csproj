@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A280E814-90A6-4FC7-B0C6-511055874A25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFeLib</RootNamespace>
+    <AssemblyName>NFeLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\CampoNo.cs" />
+    <Compile Include="Base\ControleXml.cs" />
+    <Compile Include="Base\FormatadorAtributoNFe.cs" />
+    <Compile Include="Base\Grupo.cs" />
+    <Compile Include="VO\AdicaoVO.cs" />
+    <Compile Include="VO\ArmamentoVO.cs" />
+    <Compile Include="VO\DeducaoVO.cs" />
+    <Compile Include="VO\FornecimentoDiarioCanaVO.cs" />
+    <Compile Include="VO\CanaVO.cs" />
+    <Compile Include="VO\CompraVO.cs" />
+    <Compile Include="VO\ComercioExteriorVO.cs" />
+    <Compile Include="VO\ProcessoReferenciadoVO.cs" />
+    <Compile Include="VO\ObsFiscoVO.cs" />
+    <Compile Include="VO\ObsContribuinteVO.cs" />
+    <Compile Include="VO\InfoAdicionalVO.cs" />
+    <Compile Include="VO\CartaoVO.cs" />
+    <Compile Include="VO\FormaPagamentoVO.cs" />
+    <Compile Include="VO\DuplicataVO.cs" />
+    <Compile Include="VO\FaturaVO.cs" />
+    <Compile Include="VO\CobrancaVO.cs" />
+    <Compile Include="VO\LacreVO.cs" />
+    <Compile Include="VO\VolumeVO.cs" />
+    <Compile Include="VO\ReboqueVO.cs" />
+    <Compile Include="VO\VeiculoTransporteVO.cs" />
+    <Compile Include="VO\RetencaoICMSTransporteVO.cs" />
+    <Compile Include="VO\TransportadoraVO.cs" />
+    <Compile Include="VO\TransporteVO.cs" />
+    <Compile Include="VO\RetencaoTributoVO.cs" />
+    <Compile Include="VO\ICMSTotalVO.cs" />
+    <Compile Include="VO\ISSQNTotalVO.cs" />
+    <Compile Include="VO\TotalVO.cs" />
+    <Compile Include="VO\ImpostoDevolvidoVO.cs" />
+    <Compile Include="VO\IPIDevolvidoVO.cs" />
+    <Compile Include="VO\ISSQNVO.cs" />
+    <Compile Include="VO\COFINSVO.cs" />
+    <Compile Include="VO\ImpostoImportacaoVO.cs" />
+    <Compile Include="VO\IPINaoTributadoVO.cs" />
+    <Compile Include="VO\COFINSSTVO.cs" />
+    <Compile Include="VO\PISSTVO.cs" />
+    <Compile Include="VO\COFINSxxVO.cs" />
+    <Compile Include="VO\PISxxVO.cs" />
+    <Compile Include="VO\IPITributadoVO.cs" />
+    <Compile Include="VO\PISVO.cs" />
+    <Compile Include="VO\IPIVO.cs" />
+    <Compile Include="VO\ICMSxxVO.cs" />
+    <Compile Include="VO\ICMSVO.cs" />
+    <Compile Include="VO\ImpostoVO.cs" />
+    <Compile Include="VO\CideVO.cs" />
+    <Compile Include="VO\CombustivelVO.cs" />
+    <Compile Include="VO\MedicamentoVO.cs" />
+    <Compile Include="VO\VeiculoVO.cs" />
+    <Compile Include="VO\ExportacaoIndiretaVO.cs" />
+    <Compile Include="VO\ExportacaoVO.cs" />
+    <Compile Include="VO\DeclaracaoImportacaoVO.cs" />
+    <Compile Include="VO\ProdutoVO.cs" />
+    <Compile Include="VO\DetalhamentoVO.cs" />
+    <Compile Include="VO\ReferenciaNFRuralVO.cs" />
+    <Compile Include="VO\ReferenciaNFVO.cs" />
+    <Compile Include="VO\DocReferenciadoVO.cs" />
+    <Compile Include="VO\AutorizacaoVO.cs" />
+    <Compile Include="VO\BaseVO.cs" />
+    <Compile Include="VO\DestinatarioVO.cs" />
+    <Compile Include="VO\EmitenteVO.cs" />
+    <Compile Include="VO\EnderecoVO.cs" />
+    <Compile Include="VO\EntregaVO.cs" />
+    <Compile Include="VO\IdentificacaoVO.cs" />
+    <Compile Include="VO\InformacaoVO.cs" />
+    <Compile Include="VO\ItemNFeVO.cs" />
+    <Compile Include="VO\NotaFiscalVO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VO\RetiradaVO.cs" />
+    <Compile Include="XML\AdicaoXML.cs" />
+    <Compile Include="XML\ArmamentoXML.cs" />
+    <Compile Include="XML\DeducaoXML.cs" />
+    <Compile Include="XML\EntregaXML.cs" />
+    <Compile Include="XML\FornecimentoDiarioCanaXML.cs" />
+    <Compile Include="XML\CanaXML.cs" />
+    <Compile Include="XML\CompraXML.cs" />
+    <Compile Include="XML\ComercioExteriorXML.cs" />
+    <Compile Include="XML\ICMSSTXML.cs" />
+    <Compile Include="XML\ICMSxxXML.cs" />
+    <Compile Include="XML\ProcessoReferenciadoXML.cs" />
+    <Compile Include="XML\ObsFiscoXML.cs" />
+    <Compile Include="XML\ObsContribuinteXML.cs" />
+    <Compile Include="XML\InfoAdicionalXML.cs" />
+    <Compile Include="XML\CartaoXML.cs" />
+    <Compile Include="XML\FormaPagamentoXML.cs" />
+    <Compile Include="XML\DuplicataXML.cs" />
+    <Compile Include="XML\FaturaXML.cs" />
+    <Compile Include="XML\CobrancaXML.cs" />
+    <Compile Include="XML\LacreXML.cs" />
+    <Compile Include="XML\VolumeXML.cs" />
+    <Compile Include="XML\ReboqueXML.cs" />
+    <Compile Include="XML\VeiculoTransporteXML.cs" />
+    <Compile Include="XML\RetencaoICMSTransporteXML.cs" />
+    <Compile Include="XML\TransportadoraXML.cs" />
+    <Compile Include="XML\TransporteXML.cs" />
+    <Compile Include="XML\RetencaoTributoXML.cs" />
+    <Compile Include="XML\ICMSTotalXML.cs" />
+    <Compile Include="XML\ISSQNTotalXML.cs" />
+    <Compile Include="XML\TotalXML.cs" />
+    <Compile Include="XML\ImpostoDevolvidoXML.cs" />
+    <Compile Include="XML\IPIDevolvidoXML.cs" />
+    <Compile Include="XML\ISSQNXML.cs" />
+    <Compile Include="XML\COFINS\FabricaCOFINS.cs" />
+    <Compile Include="XML\COFINS\COFINSAliqXML.cs" />
+    <Compile Include="XML\COFINS\COFINSNaoTributadoXML.cs" />
+    <Compile Include="XML\COFINS\COFINSOutrXML.cs" />
+    <Compile Include="XML\COFINS\COFINSQtdeXML.cs" />
+    <Compile Include="XML\COFINSXML.cs" />
+    <Compile Include="XML\ImpostoImportacaoXML.cs" />
+    <Compile Include="XML\IPINaoTributadoXML.cs" />
+    <Compile Include="XML\COFINSSTXML.cs" />
+    <Compile Include="XML\PISSTXML.cs" />
+    <Compile Include="XML\PIS\FabricaPIS.cs" />
+    <Compile Include="XML\PIS\PISOutrXML.cs" />
+    <Compile Include="XML\PIS\PISNaoTributadoXML.cs" />
+    <Compile Include="XML\PIS\PISQtdeXML.cs" />
+    <Compile Include="XML\PIS\PISAliqXML.cs" />
+    <Compile Include="XML\IPITributadoXML.cs" />
+    <Compile Include="XML\PISXML.cs" />
+    <Compile Include="XML\IPIXML.cs" />
+    <Compile Include="XML\ICMS\FabricaICMS.cs" />
+    <Compile Include="XML\ICMS\ICMSSN900XML.cs" />
+    <Compile Include="XML\ICMS\ICMSSN500XML.cs" />
+    <Compile Include="XML\ICMS\ICMSSN202XML.cs" />
+    <Compile Include="XML\ICMS\ICMSSN201XML.cs" />
+    <Compile Include="XML\ICMS\ICMSSN102XML.cs" />
+    <Compile Include="XML\ICMS\ICMSSN101XML.cs" />
+    <Compile Include="XML\ICMSParteXML.cs" />
+    <Compile Include="XML\ICMS\ICMS90XML.cs" />
+    <Compile Include="XML\ICMS\ICMS70XML.cs" />
+    <Compile Include="XML\ICMS\ICMS60XML.cs" />
+    <Compile Include="XML\ICMS\ICMS51XML.cs" />
+    <Compile Include="XML\ICMS\ICMS20XML.cs" />
+    <Compile Include="XML\ICMS\ICMS40XML.cs" />
+    <Compile Include="XML\ICMS\ICMS30XML.cs" />
+    <Compile Include="XML\ICMS\ICMS10XML.cs" />
+    <Compile Include="XML\ICMS\ICMS00XML.cs" />
+    <Compile Include="XML\ICMSXML.cs" />
+    <Compile Include="XML\ImpostoXML.cs" />
+    <Compile Include="XML\CideXML.cs" />
+    <Compile Include="XML\CombustivelXML.cs" />
+    <Compile Include="XML\MedicamentoXML.cs" />
+    <Compile Include="XML\VeiculoXML.cs" />
+    <Compile Include="XML\ExportacaoIndiretaXML.cs" />
+    <Compile Include="XML\ExportacaoXML.cs" />
+    <Compile Include="XML\DeclaracaoImportacaoXML.cs" />
+    <Compile Include="XML\ProdutoXML.cs" />
+    <Compile Include="XML\DetalhamentoXML.cs" />
+    <Compile Include="XML\RetiradaXML.cs" />
+    <Compile Include="XML\DestinatarioXML.cs" />
+    <Compile Include="XML\EnderecoEmitenteXML.cs" />
+    <Compile Include="XML\EmitenteXML.cs" />
+    <Compile Include="XML\ReferenciaNFRuralXML.cs" />
+    <Compile Include="XML\DocReferenciadoXML.cs" />
+    <Compile Include="XML\InformacaoXML.cs" />
+    <Compile Include="XML\IdentifacacaoXML.cs" />
+    <Compile Include="XML\AutorizacaoXML.cs" />
+    <Compile Include="XML\BaseXML.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
